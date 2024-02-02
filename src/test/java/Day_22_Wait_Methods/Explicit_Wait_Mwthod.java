@@ -37,7 +37,7 @@ public class Explicit_Wait_Mwthod {
 		System.out.println("Element not Found");
 		}
 		
-		//driver.findElement(By.xpath("//h3[normalize-space()='Selenium Tutorial']")).click();
+		driver.findElement(By.xpath("//h3[normalize-space()='Selenium Tutorial']")).click();
 	}
 		
 	}

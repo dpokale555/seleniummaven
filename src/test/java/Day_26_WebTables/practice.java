@@ -45,7 +45,7 @@ public class practice {
 		
 		try
 		{
-		WebElement weblink1=mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='oxd-text oxd-text--span']")));
+		WebElement weblink2=mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='oxd-text oxd-text--span']")));
 		}
 		catch (Exception e)
 		{

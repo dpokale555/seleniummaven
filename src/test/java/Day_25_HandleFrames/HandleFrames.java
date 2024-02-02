@@ -21,7 +21,6 @@ public class HandleFrames {
 		
 		driver.findElement(By.xpath("//a[normalize-space()='Iframe with in an Iframe']")).click();
 		driver.switchTo().frame(0);
-
 	}
 
 }

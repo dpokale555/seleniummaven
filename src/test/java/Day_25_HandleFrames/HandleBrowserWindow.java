@@ -20,12 +20,12 @@ public class HandleBrowserWindow {
 		driver.get("https://testautomationpractice.blogspot.com/");
 		System.out.println("ID of browser windo"+driver.getWindowHandle());
 		
-		driver.findElement(By.cssSelector("a[href='http://www.orangehrm.com']")).click();
+		driver.findElement(By.cssSelector("button[onclick='myFunction()']")).click();
 		
 		Set<String> windowids=driver.getWindowHandles();
 		
 		//Approach 1
-		/*List<String> windowIdList=new ArrayList(windowids);
+		List<String> windowIdList=new ArrayList<String>(windowids);
 		String parrentWID=windowIdList.get(0);
 		String childWID=windowIdList.get(1);
 		
@@ -34,7 +34,7 @@ public class HandleBrowserWindow {
 		System.out.println("Child browser window title:"+driver.getTitle());
 		
 		driver.switchTo().window(parrentWID);
-		System.out.println("Parent browser window title:"+driver.getTitle());*/
+		System.out.println("Parent browser window title:"+driver.getTitle());
 		
 		//Approach 2
 	/*	for (String windowid:windowids)

@@ -19,7 +19,6 @@ public class practice {
 		WebDriver driver=new FirefoxDriver();		
 		driver.manage().window().maximize();
 		
-		
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.findElement(By.id("Wikipedia1_wikipedia-search-input")).sendKeys("Java");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
